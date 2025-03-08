@@ -1,0 +1,91 @@
+
+#b1 {
+    font-size:  30px;
+    text-align: center;
+    font-style: sans-serif;
+    }
+    #b2 {
+    font-size:  30px;
+    text-align: center;
+    font-style: sans-serif;
+    }
+    #b3 {
+    font-size:  30px;
+    text-align: center;
+    font-style: sans-serif;
+    }
+    body
+{
+    background-color: #395ed8;
+}
+ .bg_img {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+.btn1 
+{
+    background-color: #040804;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn1:hover 
+{
+    opacity: 1;
+}
+.btn2 
+{
+    background-color: #040804;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn1:hover 
+{
+    opacity: 1;
+}
+.btn3 
+{
+    background-color: #040804;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.btn1:hover 
+{
+    opacity: 1;
+}
