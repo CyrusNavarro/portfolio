@@ -1,11 +1,14 @@
  #b2, #b3 {
     font-size: 30px;
     text-align: center;
-    font-family: sans-serif; 
+    font-family: sans-serif;
+        text-decoration: none;
+
+    
 }
 
 body {
-    background-image: url('assets/bg.jpg');
+    background-image: url('../assets/bg.jpg');
     background-size: cover;
     background-position: fill;
     background-repeat: no-repeat;
@@ -22,7 +25,17 @@ body {
     margin-right: auto;
   }
 
-  .imagecontainer {
+  .git_hub {
+    border-radius: 20px;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile {
     display: flex;
     justify-content: center;
   }
@@ -43,4 +56,5 @@ body {
 .navs li a{
     color: antiquewhite ;
     margin-right: 2.5rem;
+    text-decoration: none;
 }
