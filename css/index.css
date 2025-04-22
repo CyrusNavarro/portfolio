@@ -1,14 +1,13 @@
- #b2, #b3 {
-    font-size: 30px;
-    text-align: center;
-    font-family: sans-serif;
-        text-decoration: none;
-
-    
+#b2, #b3 {
+  display: block; /* Ensures they are block elements */
+  text-align: center; /* Centers the text */
+  margin: 0; /* Removes any default margin */
+  padding: 5px 0; /* Adds spacing between the lines */
+  font-size: 1.2rem; /* Adjust font size if needed */
 }
 
 body {
-    background-image: url('../assets/bg.jpg');
+    background-image: url('../assets/bg-new1.jpg');
     background-size: cover;
     background-position: fill;
     background-repeat: no-repeat;
@@ -25,36 +24,106 @@ body {
     margin-right: auto;
   }
 
-  .git_hub {
-    border-radius: 20px;
-    padding: 20px;
-    width: 50px;
-    height: 50px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .profile {
     display: flex;
     justify-content: center;
   }
 
-
-.navs {
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    
-}
-
-.navs li {
-    display: inline-block;
-    
-}
-
-.navs li a{
-    color: antiquewhite ;
-    margin-right: 2.5rem;
+/* Color Of Navbar */
+  .custom-navbar {
+    background-color: #000000;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* SDCA */
+  .custom-navbar .brand-name {
+    color: #fff;
+    font-size: 1.5rem;
     text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Nav Links */
+  .custom-navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+    /* icons */
+  .custom-navbar .nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-links li a:hover {
+    color: #54aeb4;
+  }
+  
+  /* drop down icon for mobile view */
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: rgb(57, 158, 128);
+    cursor: pointer;
+  }
+  
+  /* Toggle Checkbox Hidden */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Color of dropdown */
+  @media (max-width: 768px) {
+    .custom-navbar .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #000000;
+      width: 100%;
+      display: none;
+      padding: 1rem 0;
+    }
+  
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+
+section {
+  display: grid;
+  grid-template-columns: 25% 30% 15% 25%;
+  gap: 15px;
+  place-content: center;
+  grid-template-rows: 50% 50%;
+  height: 80vh;
+  min-height: 460px;
+  padding: max(2vh,1,5rem);
+}
+@media screen and (max-width: 690px) {
+  section {
+    height: 65vh;
+}
+}
+@media screen and (max-width: 470px) {
+  section {
+    grid-template-columns: repeat (2,1fr);
+    grid-template-rows: repeat (3,35%);
+  }
 }
