@@ -46,11 +46,13 @@
   }
 }
 
-  body {
-    background-image: url('../assets/bg-new2.jpg');
-    background-size: cover;
-    background-position: fill;
-    background-repeat: no-repeat;
+body {
+  background-image: url('../assets/bg-new2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 100vh;
 }
 
 /* Styling for the paragraph with ID 'b1' */
@@ -66,4 +68,28 @@
     font-size: 1.1rem;
     line-height: 1.6;
     display: block;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 25% 30% 15% 25%;
+  gap: 15px;
+  place-content: center;
+  grid-template-rows: 50% 50%;
+  height: 80vh;
+  min-height: 460px;
+  padding: max(2vh, 1.5rem);
+}
+
+@media screen and (max-width: 690px) {
+  section {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 35%);
+  }
 }

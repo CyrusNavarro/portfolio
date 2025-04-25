@@ -1,21 +1,32 @@
-/* Styling for the paragraph with ID 'b1' */
-#b1 {
+/* Background Effect Container */
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Body Styling */
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0221;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* About Me Paragraph Styling */
+  #b1 {
     padding: 20px;
     border-radius: 10px;
-    text-align: center;
-    background-color: #232b2c; /* Light background */
-    color: #ffffff; /* Ensure text is readable on dark background */
+    background-color: rgba(35, 43, 44, 0.9); /* translucent for readability */
+    color: #ffffff;
     max-width: 800px;
-    margin: 40px auto; /* Center horizontally with space from top */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
     font-size: 1.1rem;
     line-height: 1.6;
-}
-
-/* Styling for the body background */
-body {
-    background-image: url('../assets/bg-new2.jpg');
-    background-size: cover;
-    background-position: fill;
-    background-repeat: no-repeat;
-}
+  }
+  
