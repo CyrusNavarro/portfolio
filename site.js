@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Typed.js initialization
+    // Typed.js
     new Typed('.multiple-text', {
       strings: ['Student', 'Aspiring Developer', 'Future Developer'],
       typeSpeed: 100,
@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       loop: true
     });
   
-    // Vanta.js initialization
+   
+  });
+   // Vanta.js
     VANTA.RINGS({
       el: "#vanta-bg",
       mouseControls: true,
@@ -21,4 +23,3 @@ document.addEventListener("DOMContentLoaded", function () {
       backgroundColor: 0x0,
       color: 0x563baf
     });
-  });
