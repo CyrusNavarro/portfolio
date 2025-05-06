@@ -10,15 +10,20 @@
   
   
   /* About Me Paragraph Styling */
-  #b1 {
+  .b1 {
+
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(35, 43, 44, 0.9); /* translucent for readability */
+    background-color: rgba(35, 43, 44, 0.95);
     color: #ffffff;
     max-width: 800px;
-    margin: 40px auto;
+    margin: 130px auto;
     font-size: 1.1rem;
     line-height: 1.6;
+    letter-spacing: 1px;
+    text-indent: 40px;
+    font-family: Tahoma;
+    
   }
   
 
@@ -42,7 +47,16 @@
   }
   /* Icon Hover Color */
   .custom-navbar .brand-name:hover {
-    color: #54aeb4;
+    color: #d4af37;
+    transform: scale(1.1); /* Scale up on hover */
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
+    filter: blur(0.5px);
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.6rem;
+    text-transform: uppercase;
   }
   
   .custom-navbar .nav-links {
@@ -63,7 +77,16 @@
   }
   /* Icon Nav Hover Color */
   .custom-navbar .nav-links li a:hover {
-    color: #54aeb4;
+    color: #d4af37;
+  transform: scale(1.1); /* Scale up on hover */
+  transition: transform 0.3s ease;
+  text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
+  filter: blur(0.5px);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.6rem;
+  text-transform: uppercase;
   }
   
   .menu-icon {
