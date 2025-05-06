@@ -1,32 +1,29 @@
-/* Background */
 #vanta-bg {
-  position: fixed;
+  position: fixed; /* changed from absolute to fixed */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: -1; /* ensures it stays behind everything */
 }
 
-/* Profile Image */
+
 .cy_jpg {
-  border-radius: 50%;
+  border-radius: 200px;
+  padding: 20px;
   width: 250px;
   height: 250px;
-  object-fit: cover;
-  padding: 20px;
+  display: block;
   margin-top: 55px;
 }
 
-/* Profile Container */
 .profile {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-bottom: 20px; /* Add spacing below the profile */
 }
 
-/* Main Content */
 .home-content {
   text-align: center;
   margin: 20px auto;
@@ -40,16 +37,14 @@
   backdrop-filter: blur(2.5px);
 }
 
+.home-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
 .home-content h1 {
   font-size: 2rem;
   margin-bottom: 15px;
-}
-
-.home-content h3,
-.multiple-text {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #d4af37;
 }
 
 .home-content p {
@@ -57,16 +52,18 @@
   line-height: 1.6;
 }
 
-/* Navigation */
+
 .custom-navbar {
-  background-color: #000;
+  background-color: #000000;
   padding: 1rem 0;
   position: fixed;
   top: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   z-index: 1000;
 }
-
+/* Icon Hover Color */
 .custom-navbar .brand-name {
   color: #fff;
   font-size: 1.5rem;
@@ -74,11 +71,15 @@
   font-weight: bold;
   transition: color 0.3s ease;
 }
-
+/* Icon Hover Color */
 .custom-navbar .brand-name:hover {
   color: #d4af37;
-  transform: scale(1.1);
-  text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37;
+  transform: scale(1.1); /* Scale up on hover */
+  transition: transform 0.3s ease;
+  text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
+  filter: blur(0.5px);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
   text-transform: uppercase;
@@ -87,28 +88,32 @@
 .custom-navbar .nav-links {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
 }
-
+/* Icon Text Color*/
 .custom-navbar .nav-links li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
-  transition: all 0.3s ease;
 }
-
+/* Icon Nav Hover Color */
 .custom-navbar .nav-links li a:hover {
   color: #d4af37;
-  transform: scale(1.1);
-  text-shadow: 0 0 5px #d4af37;
+  transform: scale(1.1); /* Scale up on hover */
+  transition: transform 0.1s ease;
+  text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
+  filter: blur(0.5px);
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
   text-transform: uppercase;
 }
 
-/* Mobile Menu Toggle */
 .menu-icon {
   display: none;
   font-size: 1.5rem;
@@ -126,7 +131,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #000;
+    background-color: #000000;
     width: 100%;
     display: none;
     padding: 1rem 0;
@@ -145,7 +150,29 @@
   }
 }
 
-/* Optional: remove unused section layout */
 section {
-  display: none; /* Or remove entirely if not used */
+  display: grid;
+  grid-template-columns: 25% 30% 15% 25%;
+  gap: 15px;
+  place-content: center;
+  grid-template-rows: 50% 50%;
+  height: 80vh;
+  min-height: 460px;
+  padding: max(2vh, 1.5rem);
+}
+
+@media screen and (max-width: 690px) {
+  section {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .custom-navbar .brand-name #b1{
+    font-size: 15px;
+  }
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 35%);
+  }
 }
