@@ -21,6 +21,7 @@
   display: block;
   margin-top: 50px;
 }
+
 #b2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -35,7 +36,6 @@
   margin-top: auto;
   margin-bottom: 10px;
 }
-
 
 .custom-navbar {
   background-color: #000000;
@@ -88,7 +88,7 @@
 
 .custom-navbar .nav-links li a:hover {
   color: #d4af37;
-  transform: scale(1.1);
+  transform: scale(.3);
   transition: transform 0.3s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
@@ -148,12 +148,12 @@ section {
 
 @media screen and (max-width: 890px) {
   .container img {
-    margin: 15px auto; /* Add margin for better spacing on medium screens */
-    width: 90%; /* Adjust width to fit smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    margin: 15px auto;
+    width: 90%;
+    height: auto;
   }
   .tech-container {
-    margin-top: auto; /* Reduce margin to stick closer to #b1 */
+    margin-top: auto;
   }
   section {
     height: 65vh;
@@ -162,12 +162,12 @@ section {
 
 @media screen and (max-width: 500px) {
   .container img {
-    margin: 15px auto; /* Add margin for better spacing on medium screens */
-    width: 90%; /* Adjust width to fit smaller screens */
-    height: auto; /* Maintain aspect ratio */
+    margin: 15px auto;
+    width: 90%;
+    height: auto;
   }
   .tech-container {
-    margin-top:auto; /* Further reduce margin for smaller screens */
+    margin-top: auto;
   }
   .custom-navbar .brand-name {
     font-size: 15px;
@@ -182,39 +182,68 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: auto; /* Default margin */
-  transform: scale(0.65);
-  transition: transform 0.5s;
-  margin: 0 auto;
+  align-items: center;
+  margin: 20px auto;
   background-color: rgba(207, 195, 195, 0.2);
   border-radius: 5px;
-  padding: 5px;
+  padding: 10px;
   box-shadow: 0 4px 8px rgba(207, 195, 195, 0.2);
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  cursor: pointer;
 }
 
-.tech-container:hover {
-  transform: scale(0.75);
-}
-
-.tech-container img {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-}
-
-.tech-container img:hover {
-  transform: scale(1.1);
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
+  width: 100px;
+  text-align: center;
 }
 
+.tech-item:hover {
+  transform: scale(1.1);
+}
 
+.tech-item img {
+  width: 50px;
+}
+
+.tech-item p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .tech-container {
+    justify-content: center;
+  }
+
+  .tech-item {
+    width: 120px;
+  }
+
+  .tech-item img {
+    width: 50px;
+  }
+
+  .tech-item p {
+    font-size: 0.8rem;
+  }
+}
 
 .container img {
   width: 550px;
   margin-left: auto;
-  margin-right: auto
-} 
+  margin-right: auto;
+}
 

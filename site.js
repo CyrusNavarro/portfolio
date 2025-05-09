@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Typed.js
     new Typed('.multiple-text', {
-      strings: ['Student', 'Aspiring Developer', 'Future Developer'],
+      strings: ['2nd Year Student', 'Aspiring Web Developer', 'Future Web Developer'],
       typeSpeed: 100,
       backSpeed: 100,
       backDelay: 1000,
@@ -21,5 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
       scale: 1.00,
       scaleMobile: 1.00,
       backgroundColor: 0x0,
-      color: 0x563baf
+      color: 0x563ba0
     });
