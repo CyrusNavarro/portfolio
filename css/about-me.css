@@ -7,18 +7,35 @@
   z-index: -1;
 }
 
+
+#b1 {
+  padding: 10px;
+  text-align: center;
+  color: #fdfdfd;
+  max-width: 250px;
+  border-radius: 50px;
+  margin: 10px auto;
+  font-family: Playwrite DK Loopet;
+  font-size: 40px;
+  line-height: 1.6;
+  display: block;
+  margin-top: 50px;
+}
+
+
 .b1 {
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(35, 43, 44, 0.95);
   color: #ffffff;
   max-width: 800px;
-  margin: 130px auto;
-  font-size: 1.1rem;
+  margin: 10px auto;
+  font-size: 18px;
   line-height: 1.6;
   letter-spacing: 1px;
   text-indent: 40px;
-  font-family: Tahoma;
+  text-align: justify;
+  font-family: Playpen Sans Arabic;
 }
 
 .custom-navbar {
@@ -30,6 +47,7 @@
   margin-right: auto;
   width: 100%;
   z-index: 1000;
+  font-family: Playwrite DK Loopet;
 }
 
 .custom-navbar .brand-name {
@@ -38,6 +56,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-family: Playwrite DK Loopet;
 }
 
 .custom-navbar .brand-name:hover {
@@ -46,11 +65,10 @@
   transition: transform 0.3s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: Playwrite DK Loopet;
   font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
-  text-transform: uppercase;
 }
 
 .custom-navbar .nav-links {
@@ -61,6 +79,7 @@
   gap: 2rem;
   margin: 0;
   padding: 0;
+  font-family: Playwrite DK Loopet;
 }
 
 .custom-navbar .nav-links li a {
@@ -76,11 +95,10 @@
   transition: transform 0.3s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: Playwrite DK Loopet;
   font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
-  text-transform: uppercase;
 }
 
 .menu-icon {
