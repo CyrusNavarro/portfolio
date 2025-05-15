@@ -39,16 +39,19 @@
 .home-content h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  font-family: Playpen Sans Arabic;
 }
 
 .home-content h1 {
   font-size: 2rem;
   margin-bottom: 15px;
+  font-family: Playwrite DK Loopet;
 }
 
 .home-content p {
   font-size: 1.1rem;
   line-height: 1.6;
+  font-family: Playpen Sans Arabic;
 }
 
 .custom-navbar {
@@ -68,6 +71,7 @@
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-family: Playwrite DK Loopet;
 }
 
 .custom-navbar .brand-name:hover {
@@ -76,11 +80,10 @@
   transition: transform 0.3s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: Playwrite DK Loopet;
   font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
-  text-transform: uppercase;
 }
 
 .custom-navbar .nav-links {
@@ -91,6 +94,7 @@
   gap: 2rem;
   margin: 0;
   padding: 0;
+  font-family: Playwrite DK Loopet;
 }
 
 .custom-navbar .nav-links li a {
@@ -105,11 +109,10 @@
   transition: transform 0.1s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: Playwrite DK Loopet;
   font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
-  text-transform: uppercase;
 }
 
 .menu-icon {
