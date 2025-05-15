@@ -7,20 +7,11 @@
   z-index: -1;
 }
 
-<<<<<<< HEAD
 #b1 {
-=======
-#b1, #b2 {
-  padding: 10px;
->>>>>>> a1a3cd9bbcd26da137158ab2f40d54f32ae0becb
   text-align: center;
 
   color: #fdfdfd;
-<<<<<<< HEAD
   max-width: 250px;
-=======
-  max-width: 90%; /* Change to 90% to ensure it fits on mobile screens */
->>>>>>> a1a3cd9bbcd26da137158ab2f40d54f32ae0becb
   border-radius: 10px;
   margin: auto;
   font-family: Playwrite DK Loopet;
@@ -30,7 +21,6 @@
   margin-top: 80px;
 }
 
-<<<<<<< HEAD
 #b2 {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
@@ -45,8 +35,6 @@
   margin-bottom: 10px;
 }
 
-=======
->>>>>>> a1a3cd9bbcd26da137158ab2f40d54f32ae0becb
 .custom-navbar {
   background-color: #000000;
   padding: 1rem 0;
@@ -221,14 +209,8 @@ section {
   justify-content: center;
   align-items: center;
   margin: 20px auto;
-<<<<<<< HEAD
   background-color: rgba(35, 43, 44, 0.95);
   border-radius: 5px;
-=======
-  background-color: rgba(207, 195, 195, 0.5);
-  border-radius: 20px;
-  padding: 10px;
->>>>>>> a1a3cd9bbcd26da137158ab2f40d54f32ae0becb
   box-shadow: 0 4px 8px rgba(207, 195, 195, 0.2);
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -246,11 +228,7 @@ section {
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-<<<<<<< HEAD
   width: 120px;
-=======
-  width: 150px;
->>>>>>> a1a3cd9bbcd26da137158ab2f40d54f32ae0becb
   text-align: center;
 }
 
