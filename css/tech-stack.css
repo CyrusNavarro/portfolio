@@ -7,40 +7,32 @@
   z-index: -1;
 }
 
-#b1 {
+#b1, #b2 {
   text-align: center;
   color: #fdfdfd;
   max-width: 250px;
   border-radius: 10px;
   margin: auto;
-  font-family: Playwrite DK Loopet;
+  font-family: 'Playwrite DK Loopet', sans-serif;
   font-size: 40px;
   line-height: 1.6;
   display: block;
+}
+
+#b1 {
   margin-top: 80px;
 }
 
 #b2 {
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
-  color: #fdfdfd;
-  max-width: 250px;
-  border-radius: 10px;
-  margin: auto;
-  font-family: Playwrite DK Loopet;
-  font-size: 40px;
-  line-height: 1.6;
-  display: block;
   margin-bottom: 10px;
 }
 
 .custom-navbar {
-  background-color: #000000;
+  background-color: #000;
   padding: 1rem 0;
   position: fixed;
   top: 0;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   z-index: 1000;
 }
@@ -49,7 +41,7 @@
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
-  font-family: Playwrite DK Loopet;
+  font-family: 'Playwrite DK Loopet', sans-serif;
   font-weight: bold;
   transition: color 1s ease;
 }
@@ -60,8 +52,6 @@
   transition: transform 1s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
-  font-family: Playwrite DK Loopet;
-  font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
 }
@@ -74,11 +64,11 @@
   gap: 2rem;
   margin: 0;
   padding: 0;
-   font-family: Playwrite DK Loopet;
+  font-family: 'Playwrite DK Loopet', sans-serif;
 }
 
 .custom-navbar .nav-links li a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
   transition: transform 1s ease;
@@ -86,12 +76,10 @@
 
 .custom-navbar .nav-links li a:hover {
   color: #d4af37;
-  transform: scale(.3);
+  transform: scale(1.1);
   transition: transform 1s ease;
   text-shadow: 0 0 5px #d4af37, 0 0 10px #d4af37, 0 0 15px #d4af37;
   filter: blur(0.5px);
-  font-family: Playwrite DK Loopet;
-  font-weight: bold;
   font-style: italic;
   font-size: 1.6rem;
 }
@@ -107,100 +95,6 @@
   display: none;
 }
 
-@media (max-width: 768px) {
-  .custom-navbar .nav-links {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #000000;
-    width: 100%;
-    display: none;
-    padding: 1rem 0;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .container {
-    flex-wrap: wrap;
-    width: 100%; /* Adjust width to fit 100% on smaller screens */
-  }
-}
-
-section {
-  display: grid;
-  grid-template-columns: 25% 30% 15% 25%;
-  gap: 15px;
-  place-content: center;
-  grid-template-rows: 50% 50%;
-  height: 80vh;
-  min-height: 460px;
-  padding: max(2vh, 1.5rem);
-}
-
-@media screen and (max-width: 890px) {
-  .container img {
-    margin: 15px auto;
-    width: 90%;
-    height: auto;
-  }
-  .tech-container {
-    margin-top: auto;
-  }
-  section {
-    height: 65vh;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .container img {
-    margin: 15px auto;
-    width: 90%;
-    height: auto;
-  }
-  .tech-container {
-    margin-top: auto;
-  }
-  .custom-navbar .brand-name {
-    font-size: 15px;
-  }
-  section {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 35%);
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .tech-container {
-    width: 100%; /* Ensures it fits horizontally */
-    padding: 10px;
-  }
-
-  .tech-item {
-    width: 80px; /* Makes tech items smaller for a compact view */
-  }
-
-  .tech-item img {
-    width: 30px;
-  }
-
-  .tech-item p {
-    font-size: 0.8rem;
-  }
-
-  .container img {
-    width: 90%; /* Ensures images scale with the screen size */
-    height: auto;
-    margin: 10px auto;
-  }
-}
-
 .tech-container {
   display: flex;
   flex-direction: column;
@@ -213,13 +107,13 @@ section {
   box-shadow: 0 4px 8px rgba(207, 195, 195, 0.2);
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.2);
-  width: 100%; /* Full width on small screens */
+  width: 100%;
 }
 
 .tech-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   margin: 15px;
   padding: 15px;
@@ -243,23 +137,94 @@ section {
   margin-top: 10px;
   font-size: 0.9rem;
   color: #ffffff;
-  text-align: center;
-  font-family: Playwrite DK Loopet;
+  font-family: 'Playwrite DK Loopet', sans-serif;
 }
 
 .tech-half {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
 }
 
-.Pcert
-{
-  width: 10px;
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  place-content: center;
+  padding: max(2vh, 1.5rem);
+  min-height: 460px;
 }
 
+/* Tablet Responsive Styles (iPad Air: 820px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .custom-navbar .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000;
+    width: 100%;
+    display: none;
+    padding: 1rem 0;
+  }
 
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .tech-container {
+    width: 95%;
+    margin-top: 1rem;
+  }
+
+  .tech-item {
+    width: 120px;
+  }
+
+  section {
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .container img {
+    margin: 15px auto;
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 500px) {
+  .custom-navbar .brand-name {
+    font-size: 15px;
+  }
+
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tech-item {
+    width: 100px;
+    padding: 10px;
+  }
+
+  .tech-item img {
+    width: 40px;
+  }
+
+  .tech-item p {
+    font-size: 10px;
+  }
+
+  .container img {
+    width: 250px;
+  }
+}
 
 @media screen and (max-width: 414px) {
   .tech-half {
@@ -287,7 +252,10 @@ section {
   }
 
   .container img {
-    width: 250px;
-
+    width: 90%;
+    max-width: 360px;
+    height: auto;
+    margin-top:  auto;
+    display: block;
   }
 }
