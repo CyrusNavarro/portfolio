@@ -9,7 +9,6 @@
 
 #b1 {
   text-align: center;
-
   color: #fdfdfd;
   max-width: 250px;
   border-radius: 10px;
@@ -210,7 +209,7 @@ section {
   align-items: center;
   margin: 20px auto;
   background-color: rgba(35, 43, 44, 0.95);
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 4px 8px rgba(207, 195, 195, 0.2);
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -228,7 +227,7 @@ section {
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s;
-  width: 120px;
+  width: 150px;
   text-align: center;
 }
 
@@ -254,6 +253,13 @@ section {
   align-items: center;
   justify-items: center;
 }
+
+.Pcert
+{
+  width: 10px;
+}
+
+
 
 @media screen and (max-width: 414px) {
   .tech-half {
