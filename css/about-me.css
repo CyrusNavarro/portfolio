@@ -170,3 +170,44 @@ section {
     grid-template-rows: repeat(3, 35%);
   }
 }
+
+#b2 {
+  text-align: center;
+  color: #fdfdfd;
+  max-width: 250px;
+  border-radius: 10px;
+  margin: auto;
+  font-family: 'Playwrite DK Loopet', sans-serif;
+  font-size: 40px;
+  line-height: 1.6;
+  display: block;
+}
+
+#b2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+#b3 {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+#b3 {
+  text-align: center;
+  color: #fdfdfd;
+  max-width: 200px;
+  border-radius: 10px;
+  margin: auto;
+  font-family: 'Playwrite DK Loopet', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  display: block;
+}
+
+.container img {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}

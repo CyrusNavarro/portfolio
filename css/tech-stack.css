@@ -8,7 +8,7 @@
 }
 
 .container img {
-  width: 500px; /* or any desired desktop width */
+  width: 500px;
   height: auto;
   display: block;
   margin: 20px auto;
@@ -105,7 +105,6 @@
 .tech-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 20px auto;
@@ -115,6 +114,14 @@
   backdrop-filter: blur(5px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   width: 100%;
+}
+
+section.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 2rem;
 }
 
 .tech-item {
@@ -147,122 +154,22 @@
   font-family: 'Playwrite DK Loopet', sans-serif;
 }
 
-.tech-half {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  place-content: center;
-  padding: max(2vh, 1.5rem);
-  min-height: 460px;
-}
-
-/* Tablet Responsive Styles (iPad Air: 820px - 1024px) */
-@media screen and (max-width: 1024px) {
-  .custom-navbar .nav-links {
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #000;
-    width: 100%;
-    display: none;
-    padding: 1rem 0;
-  }
-
-  #menu-toggle:checked + .menu-icon + .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .tech-container {
-    width: 95%;
-    margin-top: 1rem;
-  }
-
-  .tech-item {
-    width: 120px;
-  }
-
-  section {
-    height: auto;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
-  .container img {
-    margin: 15px auto;
-    width: 90%;
-    height: auto;
-  }
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 500px) {
-  .custom-navbar .brand-name {
-    font-size: 15px;
-  }
-
-  section {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .tech-item {
-    width: 100px;
-    padding: 10px;
-  }
-
-  .tech-item img {
-    width: 40px;
-  }
-
-  .tech-item p {
-    font-size: 10px;
-  }
-
-  .container img {
-    width: 250px;
-  }
-}
-
-@media screen and (max-width: 414px) {
-  .tech-half {
-    align-items: center;
+/* Responsive */
+@media screen and (max-width: 900px) {
+  section.tech-grid {
     justify-content: center;
-    width: fit-content;
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
   }
+}
 
+@media screen and (max-width: 600px) {
   .tech-item {
     width: 100px;
-    margin: 8px; 
     padding: 10px;
-    text-align: center;
   }
-
   .tech-item img {
     width: 40px;
   }
-
   .tech-item p {
     font-size: 10px;
-  }
-
-  .container img {
-    width: 90%;
-    max-width: 360px;
-    height: auto;
-    margin-top:  auto;
-    display: block;
   }
 }
